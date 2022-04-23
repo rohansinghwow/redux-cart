@@ -38,10 +38,16 @@ const cartSlice = createSlice({
             })
             state.total = total
             state.amount = amount
-        }
+        },
+        openModal(state){
+            state.isModalOpen = true;
+        },
+        closeModal(state){
+            state.isModalOpen = false
+        },
     }
 })
 
 const { actions, reducer } = cartSlice
-export const { addOne , removeOne , clearCart, deleteItem , calculateTotals} = actions
+export const { addOne , removeOne , clearCart, deleteItem ,closeModal ,calculateTotals , openModal} = actions
 export default reducer
