@@ -12,7 +12,7 @@ export default function Cart(){
     
 
     return (
-        <>
+        <div className="p-5 mx-auto bg-gray-200">
         <div className="heading">
             <h1 className="text-2xl">Cart </h1>
             <span className="py-2 px-5 bg-orange-700 text-white">Number of Items : {amount}</span>
@@ -29,6 +29,6 @@ export default function Cart(){
         <div className="clear-cart">
             <button className="py-3 px-5 bg-orange-500 mt-5 text-white font-bold" onClick={()=>dispatch(clearCart())}>Clear Cart</button>
         </div>
-        </>
+        </div>
     )
 }

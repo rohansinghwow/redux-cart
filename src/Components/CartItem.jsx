@@ -9,7 +9,7 @@ export default function CartItem(props){
 
     return (
         <div className="cart-items ml-auto w-2/3 md:w-full p-5">
-            <img src={img} alt={title}  />
+            <img src={img} alt={title} className="w-44" />
             <p className="title">{title}</p>
             <p>Price : {price}</p>
             <div className="amount-div">
