@@ -13,14 +13,14 @@ export default function Cart(){
     
 
     return (
-        <div className="p-5 mx-auto bg-gray-200">
+        <div className="p-5 mx-auto  w-3/5">
         <div className="heading">
             <h1 className="text-2xl">Cart </h1>
-            <span className="py-2 px-5 bg-orange-700 text-white">Number of Items : {amount}</span>
+            <span className="py-2 px-3 w-full bg-orange-700 text-white">Number of Items : {amount}</span>
 
         </div>
 
-        <div className="card shadow-md p-5 ">
+        <div className="w-5/6 ">
            {cartItems.map((item)=>{
                 
                 return <CartItem  {...item} />
